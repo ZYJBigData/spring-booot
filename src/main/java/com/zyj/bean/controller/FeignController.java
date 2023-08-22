@@ -10,14 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 @Slf4j
-public class feignController {
-
+public class FeignController {
     @Autowired
     MasterConfig masterConfig;
 
     @GetMapping
-    public String helloWorld() {
-        log.error("config=={}", masterConfig.rateControlTaskType);
+    public String propertiesValue() {
         return masterConfig.rateControlTaskType;
     }
 } 
