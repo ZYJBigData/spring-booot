@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 @Slf4j
-public class FeignController {
+public class Controller {
     @Autowired
     MasterConfig masterConfig;
 
